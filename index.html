@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Emergency Service</title>
 
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -12,9 +12,118 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Mobile Responsive CSS -->
+  <style>
+@media (max-width: 576px) {
+  body {
+    padding: 0 10px !important;
+  }
+
+  /* Navbar */
+  .mine-section {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    padding: 15px 10px !important;
+  }
+
+  .mine-section h2 {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+  }
+
+  .mine-section > .flex {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    margin-right: 0 !important;
+  }
+
+  .mine-section .flex img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .mine-section .flex p {
+    font-size: 14px !important;
+  }
+
+  /* Banner */
+  .bg-gradient-to-r {
+    text-align: center !important;
+    padding: 15px 10px !important;
+  }
+
+  .bg-gradient-to-r img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .bg-gradient-to-r h1 {
+    font-size: 20px !important;
+  }
+
+  .bg-gradient-to-r p {
+    font-size: 12px !important;
+  }
+
+  /* Main container */
+  .flex.gap-5 {
+    flex-direction: row !important; /* keep sidebar right */
+    gap: 10px !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto; /* scroll if too wide */
+    padding: 10px !important;
+  }
+
+  /* Cards container */
+  .grid.grid-cols-3 {
+    grid-template-columns: 1fr !important; /* one card per row */
+    gap: 15px !important;
+  }
+
+  /* Cards */
+  .bg-white {
+    padding: 15px !important;
+    min-width: 200px; /* allow some width if sidebar */
+  }
+
+  .bg-white h2 {
+    font-size: 16px !important;
+  }
+
+  .bg-white h1 {
+    font-size: 20px !important;
+  }
+
+  .bg-white p {
+    font-size: 12px !important;
+  }
+
+  /* Buttons stacked vertically */
+  .buttton {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .buttton button {
+    width: 100% !important;
+    padding: 8px !important;
+  }
+
+  /* Sidebar */
+  .w-[400px] {
+    width: 180px !important; /* smaller width on mobile */
+    flex-shrink: 0; /* don’t shrink */
+    margin-top: 0 !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
+  <!-- Your original HTML starts here -->
   <!-- navbar section -->
   <div class="mine-section flex justify-between items-center px-[60px] py-[30px]">
     <div class="flex items-center gap-2">
@@ -51,7 +160,7 @@
   <div class="bg-green-50">
     <div class="flex gap-5 px-12 py-14">
       <div class="grid grid-cols-3 gap-6">
-        <!-- Example card structure, repeat for other cards -->
+        <!-- card 1 -->
         <div class="bg-white p-[32px] rounded-xl shadow-md">
           <div class="flex justify-between items-center">
             <img class="w-[50px] h-[50px] bg-[#FFCCCC] p-[14px] rounded-2xl" src="assets/emergency.png" alt="">
@@ -69,7 +178,12 @@
         </div>
 
 
-        <!-- card two -->
+
+
+
+        <!-- Repeat other cards as in your original HTML -->
+
+            <!-- card 2 -->
          <!-- start -->
             <div class="bg-white p-[32px] rounded-xl shadow-md">
           <div class="flex justify-between items-center">
@@ -183,7 +297,7 @@
             <button class="call-btn btn py-[10px] w-[49%] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
-        <!-- card 9 -->
+         <!-- card 9 -->
            <div class="bg-white p-[32px] rounded-xl shadow-md">
           <div class="flex justify-between items-center">
             <img class="w-[50px] h-[50px] bg-[#FFCCCC] p-[14px] rounded-2xl" src="assets/emergency.png" alt="">
@@ -199,8 +313,12 @@
             <button class="call-btn btn py-[10px] w-[49%] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
-        
-       
+
+
+
+
+
+<!-- card ends here -->
 
       </div>
 
@@ -217,4 +335,5 @@
 
   <script src="index.js"></script>
 </body>
+
 </html>
