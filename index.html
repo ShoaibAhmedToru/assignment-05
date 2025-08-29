@@ -13,14 +13,14 @@
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Mobile Responsive CSS -->
+  <!-- Mobile responsive will satrt here -->
   <style>
 @media (max-width: 576px) {
   body {
     padding: 0 10px !important;
   }
 
-  /* Navbar */
+  /* navbar here */
   .mine-section {
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -48,7 +48,7 @@
     font-size: 14px !important;
   }
 
-  /* Banner */
+  /* banner here */
   .bg-gradient-to-r {
     text-align: center !important;
     padding: 15px 10px !important;
@@ -67,25 +67,25 @@
     font-size: 12px !important;
   }
 
-  /* Main container */
+  /* main-container here */
   .flex.gap-5 {
-    flex-direction: row !important; /* keep sidebar right */
+    flex-direction: row !important;
     gap: 10px !important;
     flex-wrap: nowrap !important;
-    overflow-x: auto; /* scroll if too wide */
+    overflow-x: auto; 
     padding: 10px !important;
   }
 
-  /* Cards container */
+  /* Cards container responsive */
   .grid.grid-cols-3 {
-    grid-template-columns: 1fr !important; /* one card per row */
+    grid-template-columns: 1fr !important; 
     gap: 15px !important;
   }
 
-  /* Cards */
+  /*  all 9 cards */
   .bg-white {
     padding: 15px !important;
-    min-width: 200px; /* allow some width if sidebar */
+    min-width: 200px; 
   }
 
   .bg-white h2 {
@@ -100,7 +100,8 @@
     font-size: 12px !important;
   }
 
-  /* Buttons stacked vertically */
+
+
   .buttton {
     flex-direction: column !important;
     gap: 8px !important;
@@ -111,20 +112,24 @@
     padding: 8px !important;
   }
 
-  /* Sidebar */
+  
   .w-[400px] {
-    width: 180px !important; /* smaller width on mobile */
-    flex-shrink: 0; /* don’t shrink */
+    width: 180px !important; 
+    flex-shrink: 0;
     margin-top: 0 !important;
   }
 }
 </style>
 
+
+
+
 </head>
 
+
+
 <body>
-  <!-- Your original HTML starts here -->
-  <!-- navbar section -->
+  <!-- navbar section strt -->
   <div class="mine-section flex justify-between items-center px-[60px] py-[30px]">
     <div class="flex items-center gap-2">
       <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
@@ -146,8 +151,12 @@
       </div>
     </div>
   </div>
+<!-- nav bar section end -->
 
-  <!--banner section  -->
+
+
+
+  <!--banner section  start -->
   <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-[21px] flex flex-col justify-center items-center text-center text-white">
     <div>
       <img class="w-[92px] h-[92px] mx-auto" src="assets/logo-dark.png" alt="">
@@ -155,8 +164,10 @@
       <p>Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
     </div>
   </div>
+<!-- banner end -->
 
-  <!-- card section -->
+
+  <!-- card section start -->
   <div class="bg-green-50">
     <div class="flex gap-5 px-12 py-14">
       <div class="grid grid-cols-3 gap-6">
@@ -181,10 +192,10 @@
 
 
 
-        <!-- Repeat other cards as in your original HTML -->
+       
 
-            <!-- card 2 -->
-         <!-- start -->
+           
+         <!-- card 2 -->
             <div class="bg-white p-[32px] rounded-xl shadow-md">
           <div class="flex justify-between items-center">
             <img class="w-[50px] h-[50px] bg-[#FFCCCC] p-[14px] rounded-2xl" src="assets/police.png" alt="">
@@ -200,7 +211,7 @@
             <button class="call-btn btn py-[10px] w-[49%] bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
-          <!-- end -->
+          
           <!-- card 3 -->
              <div class="bg-white p-[32px] rounded-xl shadow-md">
           <div class="flex justify-between items-center">
@@ -318,9 +329,16 @@
 
 
 
-<!-- card ends here -->
+
 
       </div>
+<!-- card endd -->
+
+
+
+
+
+
 
       <!-- right section -->
       <div class="w-[400px] bg-white p-4 rounded-2xl shadow-md">
@@ -333,7 +351,11 @@
     </div>
   </div>
 
+
+
   <script src="index.js"></script>
 </body>
+
+
 
 </html>
